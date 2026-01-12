@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal Documents</title>
+    <style>
+        :root {
+            --bg: #ffffff;
+            --text: #1a1a1a;
+            --text-secondary: #666666;
+            --border: #e5e5e5;
+            --accent: #007AFF;
+            --card-bg: #f9f9f9;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #1a1a1a;
+                --text: #f5f5f5;
+                --text-secondary: #a0a0a0;
+                --border: #333333;
+                --card-bg: #252525;
+            }
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+            padding: 2rem 1rem;
+            max-width: 720px;
+            margin: 0 auto;
+        }
+        h1 { font-size: 1.75rem; margin-bottom: 0.5rem; }
+        .subtitle { color: var(--text-secondary); margin-bottom: 2rem; }
+        .app-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        .app-card h2 {
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+        }
+        .app-card p {
+            color: var(--text-secondary);
+            font-size: 0.875rem;
+            margin-bottom: 1rem;
+        }
+        .links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        .links a {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background: var(--accent);
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 0.875rem;
+        }
+        .links a:hover {
+            opacity: 0.9;
+        }
+        .links a.secondary {
+            background: transparent;
+            border: 1px solid var(--border);
+            color: var(--text);
+        }
+    </style>
+</head>
+<body>
+    <h1>Legal Documents</h1>
+    <p class="subtitle">アプリの法的文書一覧</p>
+
+    <div class="app-card">
+        <h2>PaperWatch</h2>
+        <p>arXiv論文をAI要約付きでプッシュ通知するiOSアプリ</p>
+        <div class="links">
+            <a href="paperwatch/privacy-policy-ja.html">プライバシーポリシー</a>
+            <a href="paperwatch/terms-of-service-ja.html">利用規約</a>
+            <a href="paperwatch/privacy-policy-en.html" class="secondary">Privacy Policy</a>
+            <a href="paperwatch/terms-of-service-en.html" class="secondary">Terms of Service</a>
+        </div>
+    </div>
+
+</body>
+</html>
